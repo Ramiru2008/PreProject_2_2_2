@@ -1,14 +1,15 @@
 package web.dao;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.models.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Component
-public class CarServiceImpl implements CarService {
+@Repository
+public class CarDaoImpl implements CarDao {
 
     @Override
     public List<Car> getAllCars(Integer count) {
